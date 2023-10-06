@@ -64,7 +64,7 @@ describe("Given the SightingRepository class", () => {
   });
 
   describe("When calling the update method", () => {
-    test("Then it should fecth data from the API and return the response", async () => {
+    test("Then it should fetch data from the API and return the response", async () => {
       const sightingData = { id: "1" } as unknown as Partial<Sighting>;
       const expectedUrl = `http://test.com/sighting/${sightingData.id}`;
 
@@ -79,7 +79,7 @@ describe("Given the SightingRepository class", () => {
         method: "PATCH",
         body: JSON.stringify(sightingData),
         headers: {
-          "Content-Type": "application/json",
+          // "Content-Type": "application/json",
           Authorization: "Bearer " + mockToken,
         },
       });
@@ -101,7 +101,7 @@ describe("Given the SightingRepository class", () => {
       expect(global.fetch).toHaveBeenCalledWith(expectedUrl, {
         method: "DELETE",
         headers: {
-          "Content-Type": "application/json",
+          // "Content-Type": "application/json",
           Authorization: "Bearer " + mockToken,
         },
       });
