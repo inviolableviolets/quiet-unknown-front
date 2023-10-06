@@ -1,0 +1,13 @@
+.formPageContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-image: url("/form-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
+}

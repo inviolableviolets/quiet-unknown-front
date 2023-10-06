@@ -1,0 +1,156 @@
+.galleryContainer {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 99vw;
+  height: fit-content;
+
+  .gallery {
+    height: fit-content;
+    width: fit-content;
+  }
+  .galleryController {
+    background-color: transparent;
+    border: none;
+    font-size: 3em;
+    color: transparent;
+    -webkit-text-stroke: 1px yellow;
+    width: 3em;
+    height: fit-content;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .galleryControllerDisabled {
+    background-color: transparent;
+    border: none;
+    font-size: 3em;
+    color: transparent;
+    -webkit-text-stroke: 1px grey;
+    width: 3em;
+    height: fit-content;
+    border-radius: 50px;
+  }
+
+  .galleryController:hover {
+    transition: 0.2s ease-in-out;
+    color: white;
+    -webkit-text-stroke: 1px white;
+  }
+}
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  .filter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 1em;
+    height: fit-content;
+    transform: scale(0.7);
+
+    @media (max-width: 1200px) {
+      width: 100vw;
+      justify-content: center;
+      margin: 1em 0 0 0;
+      padding: 0;
+    }
+
+    button {
+      all: unset;
+      width: 7vw;
+      height: 7vw;
+      border: none;
+      cursor: pointer;
+      background-size: cover;
+      border-radius: 0;
+      box-shadow: none;
+      text-shadow: none;
+    }
+
+    button:active {
+      filter: brightness(0.5);
+    }
+
+    button:hover {
+      transition: 0.2s ease-in-out;
+      transform: scale(1.1);
+      border: none;
+    }
+
+    .europe {
+      background-image: url("/europe.jpg");
+    }
+    .america {
+      background-image: url("/america.jpg");
+    }
+    .africa {
+      background-image: url("/africa.jpg");
+    }
+    .asia {
+      background-image: url("/asia.jpg");
+      margin-left: 1em;
+    }
+
+    .oceania {
+      background-image: url("/oceania.jpg");
+      width: 6vw;
+      height: 6vw;
+      margin: 0 1em;
+    }
+
+    .add {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      border: none;
+      background: none;
+      width: 10vw;
+      height: 10vw;
+      font-size: 12vw;
+      color: transparent;
+      -webkit-text-stroke: 2px yellow;
+      text-decoration: none;
+    }
+
+    .add:hover {
+      color: yellow;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+.tellus {
+  display: flex;
+  width: 100vw;
+  height: 2em;
+  padding-top: 2em;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+
+  .signup {
+    color: yellow;
+
+    margin: 0 0.5rem;
+  }
+  .signup:hover {
+    transition: all 0.2s ease-in-out;
+    color: gray;
+  }
+}
+
+.showAll {
+  font-size: 6vw;
+  width: 10vw;
+  height: 10vw;
+  display: flex;
+  align-items: center;
+}
+
+.showAll:hover {
+  color: yellow;
+}

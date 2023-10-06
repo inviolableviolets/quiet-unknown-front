@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+  font-size: 6vw;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  animation: 20s slide infinite linear;
+  margin: 3rem 0;
+}
+
+.marquee:hover {
+  -webkit-text-stroke: 1px yellow;
+  transition: ease-in-out 0.5s;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.ufoBreakpoint {
+  width: 100vw;
+}

@@ -1,0 +1,39 @@
+.communicationsContainer {
+  padding: 5em 5em 0 5em;
+  height: fit-content;
+
+  h2 {
+    text-align: center;
+    font-size: 6vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    @media (max-width: 650px) {
+      font-size: 5vw;
+    }
+  }
+  h3 {
+    text-align: center;
+    -webkit-text-stroke: 1px yellow;
+    color: transparent;
+    font-size: 6vw;
+    text-transform: uppercase;
+    transform: translateY(-0.7em);
+    @media (max-width: 650px) {
+      font-size: 5vw;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    padding: 2em 0 5em;
+    text-transform: uppercase;
+    height: fit-content;
+  }
+}
+
+.communications {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+}

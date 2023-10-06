@@ -1,0 +1,64 @@
+.register {
+  margin: 0 0 3em 3em;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  filter: blur(1px);
+
+  .registerForm {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-bottom: 1em;
+
+    h2 {
+      width: 5.5em;
+      font-size: 2.5rem;
+      -webkit-text-stroke: 1px white;
+      color: transparent;
+    }
+  }
+
+  .registerForm div {
+    display: flex;
+    margin: 0.5em 0;
+    height: 2em;
+  }
+
+  .registerForm input {
+    all: unset;
+    border-bottom: 1px solid yellow;
+  }
+
+  label {
+    transform: translateY(5px);
+  }
+
+  .button {
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+  }
+
+  button {
+    height: 4.5em;
+    width: 4.5em;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 0.6em;
+    border-color: yellow;
+  }
+
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.register:hover {
+  transition: 0.2s all ease-in-out;
+  filter: blur(0);
+}

@@ -1,0 +1,135 @@
+.resourcesContainer {
+  padding: 0 5em 5em 5em;
+  .resourcesTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      text-align: center;
+      font-size: 6vw;
+      text-transform: uppercase;
+      -webkit-text-stroke: 1px white;
+      color: transparent;
+      @media (max-width: 650px) {
+        font-size: 5vw;
+      }
+    }
+
+    h3 {
+      text-align: center;
+      -webkit-text-stroke: 1px yellow;
+      color: transparent;
+      font-size: 6vw;
+      text-transform: uppercase;
+      transform: translateY(-0.7em) translateX(-0.5em);
+      @media (max-width: 650px) {
+        font-size: 5vw;
+      }
+    }
+
+    img {
+      width: 30vw;
+      animation: shake 3s infinite;
+
+      @media (max-width: 350px) {
+        transition: all s ease-in-out;
+        transform: scale(0);
+      }
+    }
+  }
+  p {
+    background-color: transparent;
+    padding: 4em 0 0 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    height: fit-content;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(2px) rotate(-1deg);
+  }
+  50% {
+    transform: translateX(7px) rotate(1deg);
+  }
+  75% {
+    transform: translateX(3px) rotate(-1deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.links {
+  margin: 0;
+  padding: 5em;
+  display: flex;
+  justify-content: space-between;
+  background-image: url("/resources-footer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(-5em);
+
+  img {
+    width: 25vw;
+    height: fit-content;
+    mix-blend-mode: difference;
+  }
+
+  ul {
+    font-size: 1.2rem;
+    @media (max-width: 750px) {
+      font-size: 2vw;
+    }
+    .yellow {
+      color: yellow;
+      margin-right: 0.4em;
+    }
+
+    li {
+      padding: 1em 0;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      transition: all 0.2s ease-in-out;
+      color: yellow;
+    }
+  }
+}
+
+.humanity {
+  height: fit-content;
+  width: fit-content;
+}
+
+.final {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 3vw;
+  .looking {
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px yellow;
+    color: transparent;
+    margin-top: 1em;
+  }
+  .sagan {
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 1.3rem;
+    margin-top: 1em;
+    color: white;
+  }
+}

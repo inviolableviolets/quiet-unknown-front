@@ -1,0 +1,97 @@
+.details {
+  height: 100vh;
+  display: flex;
+  background-image: url("/public/form-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    margin: 3em;
+    margin-left: 10em;
+    width: 25em;
+    height: 25em;
+    box-shadow: 0 0 50px black;
+    @media (max-width: 1000px) {
+      margin: 0;
+      width: 20em;
+      height: 20em;
+    }
+    @media (max-width: 600px) {
+      transition: all 0.2s ease-in-out;
+      margin: 0;
+      height: 15em;
+      width: 15em;
+    }
+  }
+
+  .data {
+    padding: 3em 10em 3em 0;
+    @media (max-width: 1000px) {
+      padding: 3em;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      font-size: 2vw;
+      @media (max-width: 600px) {
+        transition: all 0.2s ease-in-out;
+        font-size: 4vw;
+      }
+    }
+
+    h1 {
+      font-size: 5vw;
+      margin: 0 0 0.2em 0;
+      padding: 0;
+      color: transparent;
+      text-transform: uppercase;
+      -webkit-text-stroke: 1px yellow;
+      @media (max-width: 600px) {
+        transition: all 0.2s ease-in-out;
+        font-size: 7vw;
+      }
+    }
+
+    .description {
+      font-style: italic;
+      @media (max-width: 1000px) {
+        transition: all 0.2s ease-in-out;
+        padding: 0 6em;
+      }
+      @media (max-width: 600px) {
+        transition: all 0.2s ease-in-out;
+        padding: 0;
+      }
+    }
+
+    h2 {
+      color: transparent;
+      text-transform: uppercase;
+      -webkit-text-stroke: 1px yellow;
+      margin: 1em 0 0.2em 0;
+      font-size: 3vw;
+      @media (max-width: 600px) {
+        transition: all 0.2s ease-in-out;
+        font-size: 4vw;
+        -webkit-text-stroke: 0.5px yellow;
+      }
+    }
+  }
+}

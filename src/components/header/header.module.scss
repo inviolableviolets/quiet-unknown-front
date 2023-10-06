@@ -1,0 +1,148 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(black, black, transparent);
+  padding: 2em 5em 2em 2em;
+  margin: 0;
+  font-weight: 100;
+  font-size: 1rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: white;
+  min-height: 2.5rem;
+  z-index: 2;
+  transition: all 0.5s ease;
+
+  .logoExpand {
+    letter-spacing: 0.25rem;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 2em 2em 2em 0em;
+  }
+
+  .logoSpan {
+    color: yellow;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.7rem;
+
+    li {
+      padding: 0 1rem;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    color: yellow;
+    text-underline-offset: 0.5em;
+    transition: 0.2s ease-in-out;
+  }
+  .yellow {
+    color: yellow;
+    margin-right: 2em;
+  }
+}
+
+.yellow:hover + .user {
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  transition: all 0.4 ease-in-out;
+  color: yellow;
+  transform: scale(1.1);
+}
+
+.yellow:hover + .logout {
+  color: yellow;
+  transform: scale(1.5) translateY(1px);
+}
+
+.logout {
+  transform: scale(1.4) translateY(1px);
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @media (max-width: 1000px) {
+    width: 55vw;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 280%;
+    right: -100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    z-index: 5;
+    box-shadow: 0 0 30px black;
+
+    ul {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    li {
+      margin: 1em;
+    }
+  }
+}
+
+.navbar {
+  @media (max-width: 1000px) {
+    width: 55vw;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1em;
+    z-index: 5;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 30px black;
+
+    ul {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    li {
+      margin: 1em;
+    }
+  }
+}
+
+.menu {
+  cursor: pointer;
+  display: none;
+  font-size: 2em;
+  color: yellow;
+  z-index: 5;
+
+  @media (max-width: 1000px) {
+    display: initial;
+  }
+}
