@@ -45,7 +45,7 @@ describe("UserRepository", () => {
         password: "1234",
       };
 
-      const expectedUrl = "https://test.com/user/login/";
+      const expectedUrl = "https://test.com/user/login";
       const mockResponse = {
         id: "1",
         userName: "test",
@@ -74,7 +74,7 @@ describe("UserRepository", () => {
       };
       const error = new Error("Login error");
 
-      const expectedUrl = "https://test.com/user/login/";
+      const expectedUrl = "https://test.com/user/login";
 
       global.fetch = jest.fn().mockResolvedValue({
         ok: false,
