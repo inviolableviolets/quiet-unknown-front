@@ -33,7 +33,7 @@ export const AreciboMessage = () => {
 
   return (
     <div className={areciboStyle.areciboMessage} data-testid="arecibo-message">
-      <h1></h1>
+      <h3></h3>
       {gridData.map((row, rowIndex) => (
         <div key={rowIndex} className={areciboStyle.row} data-testid="row">
           {row.map((value, columnIndex) => (

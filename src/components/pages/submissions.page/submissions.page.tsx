@@ -10,7 +10,7 @@ export default function SubmissionsPage() {
     <>
       <ComeBack></ComeBack>
       <div className={submissionsPageStyle.submissionsPageContainer}>
-        <h1>{currentUser}'s submissions</h1>
+        <h3>{currentUser}'s submissions</h3>
         <Submissions></Submissions>
       </div>
     </>
