@@ -1,13 +1,15 @@
 .resourcesContainer {
   padding: 8%;
+
+  @media (max-width: 1000px) {
+    padding: 3.5rem;
+  }
   .resourcesTitle {
     display: flex;
     justify-content: space-between;
     align-items: center;
     h2 {
       font-size: 4.5em;
-      padding: 8%;
-
       text-transform: uppercase;
       -webkit-text-stroke: 1px white;
       color: transparent;
@@ -43,7 +45,7 @@
       color: transparent;
       text-transform: uppercase;
       -webkit-text-stroke: 1px yellow;
-      transform: translateX(-4rem) translateY(-3rem);
+      transform: translateX(-120%) translateY(2rem);
 
       @media (max-width: 700px) {
         transform: translateX(-100%) translateY(0.5em);
@@ -142,14 +144,24 @@
       margin-top: 2em;
     }
   }
-  .sagan {
-    text-transform: uppercase;
-    font-style: normal;
-    font-size: 1.3rem;
-    margin-top: 1em;
-    color: white;
-    @media (max-width: 700px) {
-      display: none;
-    }
+}
+
+.sagan {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin-top: 5rem;
+
+  @media (max-width: 700px) {
+    display: none;
   }
+}
+summary::marker {
+  color: yellow;
+}
+
+summary::-webkit-details-marker {
+  color: yellow;
 }
