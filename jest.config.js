@@ -19,7 +19,9 @@ export default {
     "<rootDir>/src/vite-env.d.ts",
     "<rootDir>/src/config.ts",
     "<rootDir>/src/components/arecibo",
+    "<rootDir>/src/components/home",
     "<rootDir>/src/components/pages/modify.page/",
     "<rootDir>/src/components/gallery",
+    "<rootDir>/src/utils/reveal",
   ],
 };

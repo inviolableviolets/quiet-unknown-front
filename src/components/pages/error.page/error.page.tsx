@@ -6,9 +6,9 @@ export default function ErrorPage() {
     <>
       <ComeBack></ComeBack>
       <div className={errorPageStyle.errorPageContainer}>
-        <h1>
+        <h2>
           Error 404 <span>Error 404</span>
-        </h1>
+        </h2>
         <h2>Page not found //// please head back home</h2>
       </div>
     </>

@@ -1,34 +1,55 @@
 .communicationsContainer {
-  padding: 5em 5em 0 5em;
   height: fit-content;
 
   h2 {
+    font-size: 4.5em;
     text-align: center;
-    font-size: 6vw;
     text-transform: uppercase;
     -webkit-text-stroke: 1px white;
     color: transparent;
-    @media (max-width: 650px) {
-      font-size: 5vw;
+    @media (max-width: 1200px) {
+      margin: 3rem 0 0 0;
+      font-size: 4em;
+    }
+    @media (max-width: 750px) {
+      font-size: 3em;
+    }
+    @media (max-width: 550px) {
+      font-size: 2.5rem;
+    }
+    @media (max-width: 500px) {
+      margin: 0;
+      display: none;
     }
   }
-  h3 {
-    text-align: center;
-    -webkit-text-stroke: 1px yellow;
+
+  h2::after {
+    content: "COMMUNICATIONS";
+    position: absolute;
     color: transparent;
-    font-size: 6vw;
     text-transform: uppercase;
-    transform: translateY(-0.7em);
-    @media (max-width: 650px) {
-      font-size: 5vw;
+    -webkit-text-stroke: 1px yellow;
+    transform: translateX(-100%) translateY(0.5em);
+
+    @media (max-width: 1200px) {
+      transform: translateX(-100%) translateY(0.5em);
     }
   }
 
   p {
     font-size: 1.2rem;
-    padding: 2em 0 5em;
+    padding: 8%;
     text-transform: uppercase;
     height: fit-content;
+
+    @media (max-width: 400px) {
+      margin-top: -5rem;
+      padding: 3.5rem;
+    }
+
+    @media (max-width: 500px) {
+      margin: 2rem 0;
+    }
   }
 }
 
@@ -36,4 +57,8 @@
   width: 100vw;
   height: auto;
   margin: 0;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
 }

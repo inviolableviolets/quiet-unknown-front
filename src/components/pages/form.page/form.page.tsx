@@ -7,7 +7,7 @@ export default function FormPage() {
     <>
       <ComeBack></ComeBack>
       <div className={formPageStyle.formPageContainer}>
-        <h1> </h1>
+        <h3> </h3>
         <SightingForm></SightingForm>
       </div>
     </>

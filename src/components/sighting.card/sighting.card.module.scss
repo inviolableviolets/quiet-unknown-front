@@ -20,6 +20,21 @@
   font-size: 1rem;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (max-width: 500px) {
+    width: 10em;
+    height: 10em;
+  }
+
+  @media (max-width: 400px) {
+    width: 8em;
+    height: 8em;
+  }
+
+  @media (max-width: 350px) {
+    width: 6em;
+    height: 5em;
+  }
 }
 
 .cardTitle {

@@ -123,8 +123,6 @@ export default function ModifyPage() {
     <>
       <ComeBack></ComeBack>
       <div className={modifyStyle.modifyPageContainer}>
-        <h1></h1>
-
         <section className={modifyStyle.form}>
           <form
             className={modifyStyle.sightingForm}

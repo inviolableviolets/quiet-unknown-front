@@ -4,7 +4,7 @@
   justify-content: space-around;
   align-items: center;
   background-image: linear-gradient(black, black, transparent);
-  padding: 2em 5em 2em 2em;
+  padding: 2em 0;
   margin: 0;
   font-weight: 100;
   font-size: 1rem;
@@ -19,10 +19,6 @@
 
   .logoExpand {
     letter-spacing: 0.25rem;
-  }
-
-  @media (max-width: 1200px) {
-    padding: 2em 2em 2em 0em;
   }
 
   .logoSpan {

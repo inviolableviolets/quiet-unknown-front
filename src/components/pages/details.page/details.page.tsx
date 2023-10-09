@@ -19,7 +19,7 @@ export default function DetailsCard() {
         </section>
         <section className={detailsPageStyle.data}>
           <div>
-            <h1>{item.title}</h1>
+            <h2>{item.title}</h2>
             <span>Submission by @{item.owner.userName}</span>
             <span>
               Spotted in {item.region} in {item.year}
