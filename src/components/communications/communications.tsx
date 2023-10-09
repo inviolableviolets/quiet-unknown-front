@@ -15,7 +15,6 @@ export function Communications() {
       >
         <div className={communicationsStyle.communicationsText}>
           <h2>Communications</h2>
-          <h3>Communications</h3>
           <p>
             Anyone and everyone can transmit to extraterrestrials. So I think
             it's an incredible contradiction for people involved in SETI to say

@@ -11,7 +11,7 @@ export function Theories() {
       >
         <div className={theoriesStyle.theoriesText}>
           <h2>Theories</h2>
-          <p>
+          <p className={theoriesStyle.theoriesParagraph}>
             We've been looking for over 60 years. And so that leads some people
             to say we must be alone. The reality is, though, we have just begun
             the search. I mean, we've looked at a few tens of thousands of
