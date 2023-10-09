@@ -25,69 +25,71 @@ export function Resources() {
           solar system is gone, but your message is still out there, and
           essentially become archaeological photons for some future generation
           to see what we were about.
-          <br></br> <br></br>
-          <details>
-            <summary>
-              Anyway, click here to see some links you may find interesting.
-            </summary>
-            <div className={resourcesStyle.links}>
-              <ul>
-                <li>
-                  <span className={resourcesStyle.yellow}>//////</span>
-                  <a href="https://mapoftheuniverse.net/" target="_blank">
-                    MAP OF THE OBSERVABLE UNIVERSE
-                  </a>
-                </li>
-                <li>
-                  <span className={resourcesStyle.yellow}>//////</span>
-                  <a
-                    href="https://www.universetoday.com/149410/beyond-fermis-paradox-xvi-what-is-the-dark-forest-hypothesis/"
-                    target="_blank"
-                  >
-                    FERMI PARADOX & DARK FOREST
-                  </a>
-                </li>
-                <li>
-                  <span className={resourcesStyle.yellow}>//////</span>
-                  <a href="https://hubblesite.org/" target="_blank">
-                    HUBBLE SPACE SITE
-                  </a>
-                </li>
-                <li>
-                  <span className={resourcesStyle.yellow}>//////</span>
-                  <a href="https://www.jodcast.net/" target="_blank">
-                    THE JODCAST PODCAST
-                  </a>
-                </li>
-                <li>
-                  <span className={resourcesStyle.yellow}>//////</span>
-                  <a
-                    href="https://nssdc.gsfc.nasa.gov/planetary/"
-                    target="_blank"
-                  >
-                    LUNAR & PLANETARY NASA DEPT.
-                  </a>
-                </li>
-                <li>
-                  <span className={resourcesStyle.yellow}>//////</span>
-                  <a
-                    href="https://www.space.com/21925-james-webb-space-telescope-jwst.html"
-                    target="_blank"
-                  >
-                    JAMES WEBB SPACE TELESCOPE GUIDE
-                  </a>
-                </li>
-                <li>
-                  <span className={resourcesStyle.yellow}>//////</span>
-                  <a href="https://viewspace.org/" target="_blank">
-                    INTERACTIVE VIEWSPACE
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </details>
+          <br></br>
           <br></br>
         </p>
+        <details>
+          <summary>
+            Anyway, click here to see some links you may find interesting.
+          </summary>
+          <div className={resourcesStyle.links}>
+            <ul>
+              <li>
+                <span className={resourcesStyle.yellow}>//////</span>
+                <a href="https://mapoftheuniverse.net/" target="_blank">
+                  MAP OF THE OBSERVABLE UNIVERSE
+                </a>
+              </li>
+              <li>
+                <span className={resourcesStyle.yellow}>//////</span>
+                <a
+                  href="https://www.universetoday.com/149410/beyond-fermis-paradox-xvi-what-is-the-dark-forest-hypothesis/"
+                  target="_blank"
+                >
+                  FERMI PARADOX & DARK FOREST
+                </a>
+              </li>
+              <li>
+                <span className={resourcesStyle.yellow}>//////</span>
+                <a href="https://hubblesite.org/" target="_blank">
+                  HUBBLE SPACE SITE
+                </a>
+              </li>
+              <li>
+                <span className={resourcesStyle.yellow}>//////</span>
+                <a href="https://www.jodcast.net/" target="_blank">
+                  THE JODCAST PODCAST
+                </a>
+              </li>
+              <li>
+                <span className={resourcesStyle.yellow}>//////</span>
+                <a
+                  href="https://nssdc.gsfc.nasa.gov/planetary/"
+                  target="_blank"
+                >
+                  LUNAR & PLANETARY NASA DEPT.
+                </a>
+              </li>
+              <li>
+                <span className={resourcesStyle.yellow}>//////</span>
+                <a
+                  href="https://www.space.com/21925-james-webb-space-telescope-jwst.html"
+                  target="_blank"
+                >
+                  JAMES WEBB SPACE TELESCOPE GUIDE
+                </a>
+              </li>
+              <li>
+                <span className={resourcesStyle.yellow}>//////</span>
+                <a href="https://viewspace.org/" target="_blank">
+                  INTERACTIVE VIEWSPACE
+                </a>
+              </li>
+            </ul>
+          </div>
+        </details>
+        <br></br>
+
         <div className={resourcesStyle.final}>
           <span className={resourcesStyle.looking}>Keep looking up</span>
         </div>

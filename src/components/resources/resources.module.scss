@@ -158,6 +158,11 @@
     display: none;
   }
 }
+
+summary {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
 summary::marker {
   color: yellow;
 }

@@ -21,5 +21,6 @@ export default {
     "<rootDir>/src/components/arecibo",
     "<rootDir>/src/components/pages/modify.page/",
     "<rootDir>/src/components/gallery",
+    "<rootDir>/src/utils/reveal",
   ],
 };
