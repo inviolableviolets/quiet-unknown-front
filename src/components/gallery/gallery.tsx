@@ -51,9 +51,11 @@ export function Gallery() {
             &#60;
           </button>
         )}
+
         <div className={galleryStyle.gallery}>
-          <List></List>
+          <List />
         </div>
+
         {next ? (
           <button
             className={galleryStyle.galleryController}

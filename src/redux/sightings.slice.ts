@@ -4,6 +4,7 @@ import { SightingRepository } from "../services/sighting.repository";
 import { ApiResponse, GetSightingPayload } from "../types/api.response";
 
 export type SightingsState = {
+  getSightingsState: "loading" | "loaded" | null;
   sightings: Sighting[];
   count: number;
   next: string | null;
@@ -11,6 +12,7 @@ export type SightingsState = {
 };
 
 const initialState: SightingsState = {
+  getSightingsState: null,
   sightings: [] as Sighting[],
   count: 0,
   next: null,
@@ -58,6 +60,12 @@ const sightingsSlice = createSlice({
       count: payload.count,
       next: payload.next,
       previous: payload.previous,
+      getSightingsState: "loaded",
+    }));
+
+    builder.addCase(getSightingAsync.pending, (state) => ({
+      ...state,
+      getSightingsState: "loading",
     }));
     builder.addCase(createSightingAsync.fulfilled, (state, { payload }) => ({
       ...state,

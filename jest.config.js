@@ -20,8 +20,10 @@ export default {
     "<rootDir>/src/config.ts",
     "<rootDir>/src/components/arecibo",
     "<rootDir>/src/components/home",
+    "<rootDir>/src/components/theories",
     "<rootDir>/src/components/pages/modify.page/",
     "<rootDir>/src/components/gallery",
+    "<rootDir>/src/components/list",
     "<rootDir>/src/utils/reveal",
   ],
 };
