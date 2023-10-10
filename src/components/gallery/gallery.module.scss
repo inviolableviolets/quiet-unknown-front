@@ -6,6 +6,11 @@
   align-items: center;
   height: fit-content;
 
+  .spinner {
+    margin-bottom: 1rem;
+    background-color: red;
+  }
+
   .gallery {
     height: fit-content;
     width: fit-content;

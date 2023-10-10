@@ -1,8 +1,42 @@
+import { useEffect, useRef, useState } from "react";
 import { AreciboMessage } from "../arecibo/arecibo.message";
 import theoriesStyle from "./theories.module.scss";
 import { TiThSmallOutline, TiThSmall } from "react-icons/ti";
 
 export function Theories() {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+  const ref = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsVisible(true);
+          if (ref.current) {
+            observer.unobserve(ref.current);
+          }
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      }
+    );
+
+    const currentRef = ref.current;
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
+
   return (
     <>
       <section
@@ -40,8 +74,8 @@ export function Theories() {
           </p>
         </div>
         <div className={theoriesStyle.theoriesImage}>
-          <div className={theoriesStyle.arecibo}>
-            <AreciboMessage></AreciboMessage>
+          <div className={theoriesStyle.arecibo} ref={ref}>
+            {isVisible && <AreciboMessage></AreciboMessage>}
           </div>
         </div>
       </section>
