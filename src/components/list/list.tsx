@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { useSightings } from "../../hooks/use.sightings";
 import { SightingCard } from "../sighting.card/sighting.card";
 import listStyle from "./list.module.scss";
@@ -7,14 +7,14 @@ import { RootState } from "../../store/store";
 import { PropagateLoader } from "react-spinners";
 
 export function List() {
-  const { sightings, handleLoadSightings } = useSightings();
+  const { sightings } = useSightings();
   const { getSightingsState } = useSelector(
     (state: RootState) => state.sightings
   );
 
-  useEffect(() => {
-    handleLoadSightings();
-  }, [handleLoadSightings]);
+  // useEffect(() => {
+  //   handleLoadSightings();
+  // }, [handleLoadSightings]);
 
   return (
     <>

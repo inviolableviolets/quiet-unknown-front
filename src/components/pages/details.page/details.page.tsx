@@ -13,26 +13,28 @@ export default function DetailsCard() {
   return (
     <>
       <ComeBack></ComeBack>
-      <div className={detailsPageStyle.details}>
-        <section className={detailsPageStyle.image}>
-          <img src={item.image.url} alt={`${item.title} sighting.`} />
-        </section>
-        <section className={detailsPageStyle.data}>
-          <div>
-            <h2>{item.title}</h2>
-            <span>Submission by @{item.owner.userName}</span>
-            <span>
-              Spotted in {item.region} in {item.year}
-            </span>
-          </div>
-          <div>
-            <h2>What happened?</h2>
-            <span className={detailsPageStyle.description}>
-              {item.description}
-            </span>
-          </div>
-        </section>
-      </div>
+      {item && (
+        <div className={detailsPageStyle.details}>
+          <section className={detailsPageStyle.image}>
+            <img src={item.image.url} alt={`${item.title} sighting.`} />
+          </section>
+          <section className={detailsPageStyle.data}>
+            <div>
+              <h2>{item.title}</h2>
+              <span>Submission by @{item.owner.userName}</span>
+              <span>
+                Spotted in {item.region} in {item.year}
+              </span>
+            </div>
+            <div>
+              <h2>What happened?</h2>
+              <span className={detailsPageStyle.description}>
+                {item.description}
+              </span>
+            </div>
+          </section>
+        </div>
+      )}
     </>
   );
 }
