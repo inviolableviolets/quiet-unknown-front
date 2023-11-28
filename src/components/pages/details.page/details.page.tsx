@@ -3,10 +3,15 @@ import detailsPageStyle from "./details.page.module.scss";
 import { useParams } from "react-router-dom";
 import { Sighting } from "../../../models/sighting";
 import { useSightings } from "../../../hooks/use.sightings";
+import { useEffect } from "react";
 
 export default function DetailsCard() {
   const { id } = useParams();
-  const { sightings } = useSightings();
+  const { sightings, handleLoadSightings } = useSightings();
+
+  useEffect(() => {
+    handleLoadSightings();
+  }, [handleLoadSightings]);
 
   const item = sightings.find((sighting) => sighting.id === id) as Sighting;
 

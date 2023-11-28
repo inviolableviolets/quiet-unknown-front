@@ -13,7 +13,7 @@ export type UsersState = {
 
 const initialState: UsersState = {
   users: [] as User[],
-  currentUser: "",
+  currentUser: localStorage.getItem("userToken") as string,
   userSubmissions: [],
   token: localStorage.getItem("userToken") as string | undefined,
   loginError: null,
@@ -32,6 +32,7 @@ export const loginUserAsync = createAsyncThunk<
 >("users/login", async ({ repo, user }) => {
   const result = await repo.login(user);
   localStorage.setItem("userToken", result.token as string);
+  localStorage.setItem("userName", result.user.userName);
   return result;
 });
 

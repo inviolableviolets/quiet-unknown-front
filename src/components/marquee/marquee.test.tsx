@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { Marquee } from "./marquee";
+
 describe("Given a Marquee component", () => {
   describe("When it is intantiated", () => {
     const test1 = "TEST 1";

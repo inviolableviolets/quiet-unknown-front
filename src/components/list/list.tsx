@@ -5,16 +5,17 @@ import listStyle from "./list.module.scss";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store/store";
 import { PropagateLoader } from "react-spinners";
+import { useEffect } from "react";
 
 export function List() {
-  const { sightings } = useSightings();
+  const { sightings, handleLoadSightings } = useSightings();
   const { getSightingsState } = useSelector(
     (state: RootState) => state.sightings
   );
 
-  // useEffect(() => {
-  //   handleLoadSightings();
-  // }, [handleLoadSightings]);
+  useEffect(() => {
+    handleLoadSightings();
+  }, [handleLoadSightings]);
 
   return (
     <>
